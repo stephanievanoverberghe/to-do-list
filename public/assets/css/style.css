@@ -1,0 +1,138 @@
+/* CSS GENERAL */
+html, body {
+    background-color: #2d2d2d;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* BARRE DE NAVIGATION */
+.nav-bar {
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #4b4b4b;
+    overflow-y: auto;
+    color: #00b1ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.profil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 20px 0 0 0;
+}
+
+/* ACCORDEON */
+
+.menu-accordion-container {
+    background-color: #2d2d2d;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.accordion-title {
+    text-align: center;
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.accordion-body {
+    display: none;
+    text-align: left;
+    color: #ade5fe;
+}
+
+.arrow-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transition: transform 0.3s;
+    margin-left: 50px; 
+}
+
+/* MAIN */
+
+main {
+    flex: 1;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00b1ff;
+    margin: 0 20px 0 0;
+}
+
+h1 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.icon-filter {
+    margin-right: 10px;
+}
+
+.task-container {
+    margin: 50px 75px;
+}
+
+/* CHECKBOX */
+.custom-checkbox {
+    display: none;
+}
+
+.custom-label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #4b4b4b;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+.custom-checkbox:checked + .custom-label {
+    background-color: #4b4b4b;
+}
+
+.custom-checkbox:checked + .custom-label::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #00b1ff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    color: #ade5fe;
+}
