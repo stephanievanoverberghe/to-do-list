@@ -29,9 +29,7 @@
                                 <i class="arrow-icon"><img src="/public/assets/img/arrow-down.png" alt=""></i>
                             </div>
                             <div class="accordion-body">
-                                <p>Tâche 1</p>
-                                <p>Tâche 2</p>
-                                <p>Tâche 3</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -66,7 +64,7 @@
                 </div>
                 <!-- AJOUTER UNE TACHE -->
                 <div class="add-task">
-                    <i class="icon-plus">+</i>
+                    <i class="bi bi-plus-circle"></i>
                     <p>Nouvelle tâche</p>
                 </div>
             </div>
@@ -83,16 +81,61 @@
                 </div>
                 <div class="task-container">
                     <div class="task">
-                        <input type="checkbox" id="customCheckbox" class="custom-checkbox">
-                        <label for="customCheckbox" class="custom-label"></label>
-                        <h2>Apprendre le JavaScript</h2>
+                        <div class="task-1">
+                            <div class="task-content">
+                                <input type="checkbox" id="customCheckbox" class="custom-checkbox">
+                                <label for="customCheckbox" class="custom-label"></label>
+                                <h2></h2>
+                                <p></p>
+                                <i class="task-arrow-icon"><img src="/public/assets/img/arrow-down.png" alt=""></i>
+                            </div>
+                            <div class="icon">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-archive"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+                <div class="step-container">
+                    <div class="step">
+                        <div class="step-1">
+                            <input type="checkbox" id="customCheckbox-1" class="custom-checkbox-step">
+                            <label for="customCheckbox-1" class="custom-label-step"></label>
+                            <h3 class="step-title">Variables</h3>
+                            <div class="icon">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                        <div class="step-2">
+                            <input type="checkbox" id="customCheckbox-2" class="custom-checkbox-step">
+                            <label for="customCheckbox-2" class="custom-label-step"></label>
+                            <h3 class="step-title">Conditions</h3>
+                            <div class="icon">
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash3"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-step">
+                        <i class="bi bi-plus-circle"></i>
+                        <p>Ajouter une étape</p>
+                    </div>
+
+                </div>
             </div>
         </main>
     </div>
-
+    <!-- MODALES -->
+    <div class="modal" id="taskModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ajouter une nouvelle tâche</h2>
+            <input type="text" id="newTask" placeholder="Nom de la tâche">
+            <button id="addTaskBtn">Ajouter</button>
+        </div>
+    </div>
 
 </body>
 
